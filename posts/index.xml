@@ -6,9 +6,109 @@
     <description>Recent content in Posts on Abhinav&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Nov 2021 16:09:31 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 21 Nov 2021 17:16:42 +0530</lastBuildDate>
     
 	<atom:link href="http://www.abhinavvp.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>React Explained and Made Simple</title>
+      <link>http://www.abhinavvp.com/posts/react-explained-and-made-simple/</link>
+      <pubDate>Sun, 21 Nov 2021 17:16:42 +0530</pubDate>
+      
+      <guid>http://www.abhinavvp.com/posts/react-explained-and-made-simple/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1635659888350/RiQ52UEMy.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;is-react-a-framework-&#34;&gt;Is React a Framework ?&lt;/h2&gt;
+&lt;p&gt;As per the landing page of React , it is a JavaScript library to build user interfaces. Its not a framework, but a library.
+Angular, Vue, Next.js, Gatsby, Redwood.js etc are examples for frameworks. A framework includes resources that a large-scale application might need : creating forms, running automated tests, making network requests etc.
+Whereas React itself does not include many of these functionalities. Core react is used only to build User Interfaces. In order to build complete React applications, you will need to choose the required packages and tools on your own. For example, for forms and validation React Hook Form or Formik can be used and for testing React Testing Library or Jest can be used.&lt;/p&gt;
+&lt;h2 id=&#34;features-of-react&#34;&gt;Features of React&lt;/h2&gt;
+&lt;h3 id=&#34;component-based&#34;&gt;Component Based&lt;/h3&gt;
+&lt;p&gt;In React, a web page can be divided to encapsulated blocks of code called components. These components can be composed to create complex UIs. Component logic is written in JavaScript instead of templates in React. Required data can be passed to the web app via these components easily, which renders accordingly on change.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1635659993376/DjJ1PAZvy.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;declarative&#34;&gt;Declarative&lt;/h3&gt;
+&lt;p&gt;Simple views can be designed for each state in your application and data can be passed into it. React will efficiently update and render just the right components when your data changes.&lt;/p&gt;
+&lt;h3 id=&#34;learn-once-write-anywhere&#34;&gt;Learn Once, Write Anywhere&lt;/h3&gt;
+&lt;p&gt;React can be used along with multiple technology stacks. Thus you can develop new features in React without rewriting existing code. React can also render on the server using Node and it can power mobile apps using React Native.&lt;/p&gt;
+&lt;h2 id=&#34;add-react-to-a-website&#34;&gt;Add React to a Website&lt;/h2&gt;
+&lt;p&gt;React can be added in small parts to your website and then can be gradually expand its presence&lt;/p&gt;
+&lt;h3 id=&#34;step-1--add-a-dom-container-to-the-html&#34;&gt;Step 1 : Add a DOM Container to the HTML&lt;/h3&gt;
+&lt;p&gt;Open the HTML page you want to edit and Add an empty &lt;!-- raw HTML omitted --&gt; tag to mark the spot where you want to display something with React.&lt;/p&gt;
+&lt;p&gt;A unique id HTML attribute is given to div which will allow us to find it from the JavaScript code later and display a React component inside of it. You can place a “container”
+&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; like this anywhere inside the &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tag. You may have as many independent DOM containers on one page as you need. They are usually empty. React will replace any existing content inside DOM containers.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;…&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;existing&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HTML&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;…&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;--&amp;gt;&lt;/span&gt; 
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name-container&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/div&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;…&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;existing&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HTML&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;…&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;--&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-2--add-the-script-tags&#34;&gt;Step 2 : Add the Script Tags&lt;/h3&gt;
+&lt;p&gt;You will have to add three &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tags to the HTML page right before the closing &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt; tag. The first two tags load React. The third one will load your component code.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;…&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;other&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HTML&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;…&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;--&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://unpkg.com/react@17/umd/react.development.js&amp;#34;&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;crossorigin&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/script&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://unpkg.com/react-dom@17/umd/react-dom.development.js&amp;#34;&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;crossorigin&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/script&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Load&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;our&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;React&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;component&lt;/span&gt;. &lt;span style=&#34;color:#f92672&#34;&gt;--&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name_component.js&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-3-create-a-react-component&#34;&gt;Step 3: Create a React Component&lt;/h3&gt;
+&lt;p&gt;Create a file called &lt;code&gt;name_container.js&lt;/code&gt;. This code defines a React component called &lt;code&gt;NameContainer&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‘&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;strict&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;React&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;createElement&lt;/span&gt;;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;NameContainer&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;React&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Component&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;render&lt;/span&gt;() {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;(&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‘&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;div&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;,&lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Joe&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;);
+  }
+}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;domContainer&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‘#&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;container&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ReactDOM&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;render&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;NameContainer&lt;/span&gt;), &lt;span style=&#34;color:#a6e22e&#34;&gt;domContainer&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt; is used to create components. Create Element function of React takes Three arguments&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Type : div, h1, p, span etc&lt;/li&gt;
+&lt;li&gt;[props] : class, id, onClck etc&lt;/li&gt;
+&lt;li&gt;[…children] : string, another DOM element&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ReactDOM&lt;/strong&gt; is used to render components in DOM. Render function of ReactDOM takes two arguments&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Element to Render&lt;/li&gt;
+&lt;li&gt;Dom Container into which it should be rendered&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;step-4-try-react-with-jsx--optional-&#34;&gt;Step 4: Try React with JSX ( optional )&lt;/h3&gt;
+&lt;p&gt;In the previous example we only relied on features that are natively supported by browsers. This is why we used a JavaScript function call to tell React what to display: However, React also offers an option to use JSX instead. While JSX is completely optional, many people find it helpful for writing UI code. Add this &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag to your page and you can use JSX in any &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag by adding &lt;code&gt;type=”text/babel”&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;https&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//unpkg.com/babel-standalone@6/babel.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name_component&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;js&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;”&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;babel&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;name_container.js&lt;/code&gt; can be modified accordingly&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‘&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;strict&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;React&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;createElement&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;NameContainer&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;React&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Component&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;render&lt;/span&gt;() {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;div&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Joe&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/div&amp;gt;&lt;/span&gt;
+  }
+}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;domContainer&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‘#&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;container&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ReactDOM&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;render&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;NameContainer&lt;/span&gt;), &lt;span style=&#34;color:#a6e22e&#34;&gt;domContainer&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;recommended-toolchains&#34;&gt;Recommended Toolchains&lt;/h2&gt;
+&lt;p&gt;The React team primarily recommends these solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create React App : If you’re learning React or creating a new single-page app&lt;/li&gt;
+&lt;li&gt;Next.js : If you’re building a server-rendered website with Node.js&lt;/li&gt;
+&lt;li&gt;Gatsby : If you’re building a static content-oriented website&lt;/li&gt;
+&lt;li&gt;Others : Neutrino, Nx, Parcel, Razzle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Create React App is a comfortable environment for learning React. It is the best way to start building a new single-page application in React. You can use the latest JavaScript features and it provides a nice developer experience and optimizes your app for production.
+You’ll need to have Node &amp;gt;= 14.0.0 and npm &amp;gt;= 5.6 on your machine
+To create a project, run:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;npx create-react-app my-app
+cd my-app
+npm start
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create React App doesn’t handle backend logic or databases. it just creates a frontend build pipeline which you can use it with any backend you want. Under the hood, it uses Babel and webpack, but you don’t need to know anything about them. When you’re ready to deploy to production, running npm run build will create an optimized build of your app.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Check out my blog on JavaScript :  &lt;a href=&#34;https://abhinavvp.hashnode.dev/4-javascript-tips-for-shorter-code&#34;&gt;4 JavaScript tips for shorter code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     
     
