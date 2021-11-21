@@ -6,9 +6,52 @@
     <description>Recent content on Abhinav&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Nov 2021 17:16:42 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 21 Nov 2021 19:08:50 +0530</lastBuildDate>
     
 	<atom:link href="http://www.abhinavvp.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>How React Rethinks Best Practices</title>
+      <link>http://www.abhinavvp.com/posts/how-react-rethinks-best-practices/</link>
+      <pubDate>Sun, 21 Nov 2021 19:08:50 +0530</pubDate>
+      
+      <guid>http://www.abhinavvp.com/posts/how-react-rethinks-best-practices/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://reactjs.org/&#34;&gt;React.js&lt;/a&gt; is currently the most popular front-end JavaScript library for building Web applications. It is an open-source JavaScript library that is used for building user interfaces. It renders the UI as per user requirements and plays nicely with any stack. In this article, we shall go through how React rethinks some of the best practices in web development.&lt;/p&gt;
+&lt;h2 id=&#34;separation-of-concern&#34;&gt;Separation of Concern&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Separation_of_concerns&#34;&gt;separation of concerns&lt;/a&gt; (SoC) is one of the most fundamental principles in software development. The principle states that don’t write your program as one solid block, instead, break up the code into chunks that are finalized tiny pieces of the system each able to complete a simple distinct job.&lt;/p&gt;
+&lt;p&gt;Separation of concern aims to reduce coupling and to increase cohesion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Coupling&lt;/strong&gt; is the degree to which each module in a program relies on another. It is helpful as isolated problems are easy to deal with and the modules are highly likely to be unit testable. An increase in coupling means that the modules depend on each other and any change in one module might lead to cascading changes in others and it would be a nightmare to debug.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cohesion&lt;/strong&gt; is the degree to which elements of a module belong together. This is important as functionality wise the elements must make sense. Reduction in cohesion makes code harder to maintain. It won’t be easy to figure out where to make the change on need.&lt;/p&gt;
+&lt;h2 id=&#34;templates-encourage-a-poor-separation-of-concern&#34;&gt;Templates encourage a poor separation of concern&lt;/h2&gt;
+&lt;p&gt;JavaScript templating refers to the client-side data binding method implemented with the JavaScript language. In templates, you will have display logic in one file and markup in another file. Display logic and markup are inevitably tightly coupled as well as highly cohesive. We can observe that templates, in fact, separate technologies, not concerns. above all that, &lt;strong&gt;they are deliberately underpowered&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Let’s take the case of Partial feature in &lt;a href=&#34;https://handlebarsjs.com/&#34;&gt;handlebars&lt;/a&gt;:&lt;/strong&gt; Templates rely on primitive abstractions often. &lt;a href=&#34;https://handlebarsjs.com/guide/partials.html&#34;&gt;“Partial”&lt;/a&gt; is used for reusing templates. They are basically mini templates that can be included in other templates. The drawback of this approach is that reused child template gets all the variables the parent has in the current scope.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flow control abstraction like &lt;a href=&#34;https://handlebarsjs.com/guide/builtin-helpers.html#each&#34;&gt;“Each”&lt;/a&gt;&lt;/strong&gt;: “Each” iterates through each item of a sequence and emits some markup in the traditional templating language. The downfall is that it is really hard to change the way it iterates through the list. &lt;strong&gt;You don’t have the power of a programming language but the power of templating language which is deliberately underpowered&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inventing lots of new concepts that already exist in JavaScript&lt;/strong&gt;: Directives are classes that add additional behavior to elements in AngularJs. It creates a lot of concepts that were already there in JS. &lt;strong&gt;The framework cannot know how to separate your concerns for you. it should only provide tools for the user to do it correctly. Rather than the language of the framework itself&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;react--a-highly-cohesive-and-loosely-coupled-library&#34;&gt;React — a highly cohesive and loosely coupled library&lt;/h2&gt;
+&lt;p&gt;React uses components that mix markup and display logic. Markup and logic can be incorporated into individual components that match the app better unlike templating language. Moreover, the components display abstraction, composition, and expressivity.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Abstraction:&lt;/strong&gt; Components can be created using JavaScript function or class. They are unit testable and lintable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Composition:&lt;/strong&gt; They are reusable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Expressivity:&lt;/strong&gt; They use regular JavaScript expressions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;React ensures security from Cross-Site Scripting as it uses a library called React DOM, which is used to generate DOM. The library escapes the input automatically, so HTML is also escaped hence ensuring safety from XSS.&lt;/p&gt;
+&lt;p&gt;There is also an optional pre-processor that lets the user use HTML-like syntax for development called &lt;a href=&#34;https://reactjs.org/docs/introducing-jsx.html&#34;&gt;JSX&lt;/a&gt;. It makes it easier for designers to contribute code.&lt;/p&gt;
+&lt;p&gt;React ensures that there is the &lt;em&gt;&lt;strong&gt;accessibility of templates and the power of JavaScript&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-virtual-dom&#34;&gt;The Virtual DOM&lt;/h2&gt;
+&lt;p&gt;Building UI is hard because there are so many states to be managed over a web page. There are lots of UI elements, design iteration, user input, etc.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Data changing over time is the root of all evil.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We can no longer just refresh the page when the data changes. Currently, that is not a feasible solution and is also quite annoying from a user experience perspective.&lt;/p&gt;
+&lt;p&gt;React on the other hand re-renders the entire component on change. Components are &lt;a href=&#34;https://www.bmc.com/blogs/idempotence/#:~:text=Idempotence%20is%20any%20function%20that,that%20classifies%20a%20function%27s%20behavior.&#34;&gt;idempotent functions&lt;/a&gt; that describe your user interface at any point in time. React isolate data changes by using setState function in the case of Class components and user-defined functions in functional components. Now the question is it expensive?&lt;/p&gt;
+&lt;p&gt;React achieves this by using something called virtual DOM. Virtual DOM makes re-rendering fast. It is optimized for performance and memory footprint.&lt;/p&gt;
+&lt;p&gt;On every update, React build a new virtual DOM sub-tree and diff it with the old one. Then it computes the minimal set of DOM mutations and puts them in a queue and batch executes all updates.&lt;/p&gt;
+&lt;p&gt;It is fast because DOM is slow and react computes minimal DOM operations batched reads and writes for optimal DOM performance.&lt;/p&gt;
+&lt;p&gt;These are some of the ways in which React rethinks the best practices in web development. This article was based on &lt;a href=&#34;https://www.youtube.com/watch?v=x7cQ3mrcKaY&amp;amp;t=11s&#34;&gt;a talk by Pete Hunt&lt;/a&gt; from 2013. This was insightful as most of the tutorials on React deals with the How rather than the Why.&lt;/p&gt;
+</description>
+    </item>
     
     
     
