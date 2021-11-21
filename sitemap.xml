@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://www.abhinavvp.com/posts/4-javascript-tips-for-shorter-code/</loc>
+    <lastmod>2021-11-21T16:09:31+05:30</lastmod>
+  </url><url>
     <loc>http://www.abhinavvp.com/</loc>
-    <lastmod>2021-11-21T15:52:12+05:30</lastmod>
+    <lastmod>2021-11-21T16:09:31+05:30</lastmod>
   </url><url>
     <loc>http://www.abhinavvp.com/posts/</loc>
-    <lastmod>2021-11-21T15:52:12+05:30</lastmod>
+    <lastmod>2021-11-21T16:09:31+05:30</lastmod>
   </url><url>
     <loc>http://www.abhinavvp.com/posts/using-clamp-for-responsiveness/</loc>
     <lastmod>2021-11-21T15:52:12+05:30</lastmod>
