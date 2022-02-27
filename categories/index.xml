@@ -19,9 +19,9 @@
       <guid>http://www.abhinavvp.com/posts/portfolio-website-using-only-html/</guid>
       <description>&lt;p&gt;I made a portfolio website using only HTML without any styles. The intention was to push the limits of pure HTML and see its capabilities, and it was worth it. These are some of the things I’ve learned during the process.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/542/1*6MnrGagtCj1Bb6_xG-2Z0Q.png&#34; alt=&#34;the html portfolio&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;body-tag-has-some-styling-properties&#34;&gt;&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tag has some styling properties&lt;/h2&gt;
+&lt;h2 id=&#34;1body-tag-has-some-styling-properties&#34;&gt;1.&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tag has some styling properties&lt;/h2&gt;
 &lt;p&gt;The body tag has some styling properties, but most of them are depreciated. There are attributes to change background color, text color, background image, hyperlink colors, and margin. But it is advisable to use CSS properties to achieve that as these are depreciated.&lt;/p&gt;
-&lt;h2 id=&#34;details-can-be-used-as-a-drop-down-element&#34;&gt;&lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; can be used as a drop down element.&lt;/h2&gt;
+&lt;h2 id=&#34;2details-can-be-used-as-a-drop-down-element&#34;&gt;2.&lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; can be used as a drop down element.&lt;/h2&gt;
 &lt;p&gt;the &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; element is a widget that has an ‘open’ state which can be used to store information. Label can be provided inside the &lt;code&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; tag.
 When the user clicks on the widget or focuses it then presses the space bar, it opens, revealing its contents.&lt;br&gt;
 By default when closed, the widget only displays the disclosure triangle and summary. When open, it expands to display the details contained within.&lt;/p&gt;
@@ -29,7 +29,7 @@ By default when closed, the widget only displays the disclosure triangle and sum
     &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;summary&lt;/span&gt;&amp;gt;Data&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;summary&lt;/span&gt;&amp;gt;
     &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;the data to display&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;details&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;target_blank-and-targetblank&#34;&gt;&lt;code&gt;target=’_blank’&lt;/code&gt; and &lt;code&gt;target=’blank’&lt;/code&gt;&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3target_blank-and-targetblank&#34;&gt;3.&lt;code&gt;target=’_blank’&lt;/code&gt; and &lt;code&gt;target=’blank’&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; has a href property which can be used to create hyperlinks. It also has a target property that decides where the linked URL has to be displayed. The keywords are :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;_self&lt;/code&gt;: the current browsing context. (Default)&lt;/li&gt;
