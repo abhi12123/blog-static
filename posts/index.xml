@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Abhinav&#39;s Blog</title>
-    <link>http://www.abhinavvp.com/posts/</link>
+    <link>http://blog.abhinavvp.com/posts/</link>
     <description>Recent content in Posts on Abhinav&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Feb 2022 18:29:59 +0530</lastBuildDate>
     
-	<atom:link href="http://www.abhinavvp.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.abhinavvp.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>I made a portfolio website using only HTML without any Styles. This is what I learned</title>
-      <link>http://www.abhinavvp.com/posts/portfolio-website-using-only-html/</link>
+      <link>http://blog.abhinavvp.com/posts/portfolio-website-using-only-html/</link>
       <pubDate>Sun, 27 Feb 2022 18:29:59 +0530</pubDate>
       
-      <guid>http://www.abhinavvp.com/posts/portfolio-website-using-only-html/</guid>
+      <guid>http://blog.abhinavvp.com/posts/portfolio-website-using-only-html/</guid>
       <description>&lt;p&gt;I made a portfolio website using only HTML without any styles. The intention was to push the limits of pure HTML and see its capabilities, and it was worth it. These are some of the things I’ve learned during the process.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/542/1*6MnrGagtCj1Bb6_xG-2Z0Q.png&#34; alt=&#34;the html portfolio&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1body-tag-has-some-styling-properties&#34;&gt;1.&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tag has some styling properties&lt;/h2&gt;
@@ -48,10 +48,10 @@ By default when closed, the widget only displays the disclosure triangle and sum
     
     <item>
       <title>Why You Should Use Error Boundaries in React</title>
-      <link>http://www.abhinavvp.com/posts/why-you-should-use-error-boundaries-in-react/</link>
+      <link>http://blog.abhinavvp.com/posts/why-you-should-use-error-boundaries-in-react/</link>
       <pubDate>Sat, 12 Feb 2022 18:03:10 +0530</pubDate>
       
-      <guid>http://www.abhinavvp.com/posts/why-you-should-use-error-boundaries-in-react/</guid>
+      <guid>http://blog.abhinavvp.com/posts/why-you-should-use-error-boundaries-in-react/</guid>
       <description>&lt;p&gt;React Error Boundaries were introduced in React version 16 to generate a fallback UI in case a component were to crash. This was to ensure that a JavaScript error in a single component should not crash the whole app.&lt;br&gt;
 Consider the following React application which renders the component &lt;code&gt;DisplayName&lt;/code&gt; displaying the name according to the input data.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;DisplayName&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./DisplayName&amp;#34;&lt;/span&gt;;
@@ -175,10 +175,10 @@ If you need to catch an error inside an event handler, use the regular JavaScrip
     
     <item>
       <title>Another 4 JavaScript Tips for Shorter Code</title>
-      <link>http://www.abhinavvp.com/posts/another-4-javascript-tips-for-shorter-code/</link>
+      <link>http://blog.abhinavvp.com/posts/another-4-javascript-tips-for-shorter-code/</link>
       <pubDate>Sun, 28 Nov 2021 17:17:20 +0530</pubDate>
       
-      <guid>http://www.abhinavvp.com/posts/another-4-javascript-tips-for-shorter-code/</guid>
+      <guid>http://blog.abhinavvp.com/posts/another-4-javascript-tips-for-shorter-code/</guid>
       <description>&lt;p&gt;This is a continuation to my earlier article : &lt;a href=&#34;https://abhinavvp.com/posts/4-javascript-tips-for-shorter-code/&#34;&gt;4 JavaScript tips for shorter code&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;1-replace-switch-or-if-else-with-key-valuepairs&#34;&gt;1. Replace Switch or If-Else with key value pairs&lt;/h2&gt;
@@ -297,10 +297,10 @@ If you need to catch an error inside an event handler, use the regular JavaScrip
     
     <item>
       <title>How React Rethinks Best Practices</title>
-      <link>http://www.abhinavvp.com/posts/how-react-rethinks-best-practices/</link>
+      <link>http://blog.abhinavvp.com/posts/how-react-rethinks-best-practices/</link>
       <pubDate>Sun, 21 Nov 2021 19:08:50 +0530</pubDate>
       
-      <guid>http://www.abhinavvp.com/posts/how-react-rethinks-best-practices/</guid>
+      <guid>http://blog.abhinavvp.com/posts/how-react-rethinks-best-practices/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://reactjs.org/&#34;&gt;React.js&lt;/a&gt; is currently the most popular front-end JavaScript library for building Web applications. It is an open-source JavaScript library that is used for building user interfaces. It renders the UI as per user requirements and plays nicely with any stack. In this article, we shall go through how React rethinks some of the best practices in web development.&lt;/p&gt;
 &lt;h2 id=&#34;separation-of-concern&#34;&gt;Separation of Concern&lt;/h2&gt;
 &lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Separation_of_concerns&#34;&gt;separation of concerns&lt;/a&gt; (SoC) is one of the most fundamental principles in software development. The principle states that don’t write your program as one solid block, instead, break up the code into chunks that are finalized tiny pieces of the system each able to complete a simple distinct job.&lt;/p&gt;
@@ -340,10 +340,10 @@ If you need to catch an error inside an event handler, use the regular JavaScrip
     
     <item>
       <title>React Explained and Made Simple</title>
-      <link>http://www.abhinavvp.com/posts/react-explained-and-made-simple/</link>
+      <link>http://blog.abhinavvp.com/posts/react-explained-and-made-simple/</link>
       <pubDate>Sun, 21 Nov 2021 17:16:42 +0530</pubDate>
       
-      <guid>http://www.abhinavvp.com/posts/react-explained-and-made-simple/</guid>
+      <guid>http://blog.abhinavvp.com/posts/react-explained-and-made-simple/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1635659888350/RiQ52UEMy.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;is-react-a-framework-&#34;&gt;Is React a Framework ?&lt;/h1&gt;
 &lt;p&gt;As per the landing page of React , it is a JavaScript library to build user interfaces. Its not a framework, but a library.
@@ -431,10 +431,10 @@ npm start
     
     <item>
       <title>4 JavaScript Tips for Shorter Code</title>
-      <link>http://www.abhinavvp.com/posts/4-javascript-tips-for-shorter-code/</link>
+      <link>http://blog.abhinavvp.com/posts/4-javascript-tips-for-shorter-code/</link>
       <pubDate>Sun, 21 Nov 2021 16:09:31 +0530</pubDate>
       
-      <guid>http://www.abhinavvp.com/posts/4-javascript-tips-for-shorter-code/</guid>
+      <guid>http://blog.abhinavvp.com/posts/4-javascript-tips-for-shorter-code/</guid>
       <description>&lt;p&gt;There are plenty of tips which can be followed to make the JavaScript code shorter as well less complicated. I will share four of such tips which have reduced the effort and development time for me a lot while coding.&lt;/p&gt;
 &lt;h1 id=&#34;1-short-circuiting&#34;&gt;1. Short Circuiting&lt;/h1&gt;
 &lt;p&gt;This can be used when you’ll have to use a simple if condition.&lt;/p&gt;
@@ -521,10 +521,10 @@ A good rule of thumb: explicit &amp;gt; implicit&lt;/li&gt;
     
     <item>
       <title>Using Clamp() for Responsiveness</title>
-      <link>http://www.abhinavvp.com/posts/using-clamp-for-responsiveness/</link>
+      <link>http://blog.abhinavvp.com/posts/using-clamp-for-responsiveness/</link>
       <pubDate>Sun, 21 Nov 2021 15:52:12 +0530</pubDate>
       
-      <guid>http://www.abhinavvp.com/posts/using-clamp-for-responsiveness/</guid>
+      <guid>http://blog.abhinavvp.com/posts/using-clamp-for-responsiveness/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Clamp()&lt;/strong&gt; is one of the most useful yet underrated functions in CSS to ensure responsiveness in web design.
 Web pages can be viewed from multiple platforms, and you will have to ensure that the design won&amp;rsquo;t break in any of the viewports.&lt;/p&gt;
 &lt;hr&gt;
