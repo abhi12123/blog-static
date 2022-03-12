@@ -1,33 +1,61 @@
 <!DOCTYPE html>
-<html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="http://blog.abhinavvp.com/favicon.ico">
-    
-    <link rel="stylesheet" href="/css/style.min.css">
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZTPXHWFZQ"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-GZTPXHWFZQ');
-    </script>
-    <title>Abhinav VP</title>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.89.4" />
+  <title> Why You Should Use Error Boundaries in React | Abhinav VP </title>
+  <meta name="description" content="A simple and concise hugo theme.">
+  <link rel="stylesheet" href="http://blog.abhinavvp.com/css/simpleness.css">
+  <link rel="canonical" href="http://blog.abhinavvp.com/posts/why-you-should-use-error-boundaries-in-react/">
+  <link rel="alternate" type="application/rss+xml" href="" title="Abhinav VP">
+  
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  
 </head>
-<body>
-<main id="content">
-<a href="http://blog.abhinavvp.com/"><i style="padding: 20px 10px 0 0;" class="fas fa-arrow-left"></i>Home</a>
-<article>
-    <header id="post-header">
-        <h1>Why You Should Use Error Boundaries in React</h1>
-            <div>
-                <time>February 12, 2022</time>
-                </div>
-    </header><p>React Error Boundaries were introduced in React version 16 to generate a fallback UI in case a component were to crash. This was to ensure that a JavaScript error in a single component should not crash the whole app.<br>
+<body class="container">
+  <nav class="navigation">
+  <div class="nav-left">
+    
+    <div class="nav-item nav-title">
+      <a href="https://www.abhinavvp.com/"> Abhinav VP</a>
+    </div>
+    
+  </div>
+  
+</nav>
+
+  
+<article class="post">
+  <header class="post-header">
+    <h1 style="text-align: center;" >Why You Should Use Error Boundaries in React</h1>
+    <div class="post-metadata">
+    
+      <time datetime="2022-02-12T18:03:10&#43;05:30">February 12, 2022</time> &nbsp; 
+    
+    
+    
+    
+    
+      <i class="far fa-clock"></i>
+      
+      
+      
+      
+        2 min
+      
+      46 s
+      &nbsp;
+    
+    
+    </div>
+  </header>
+
+  
+
+  <div class="post-text">
+    <p>React Error Boundaries were introduced in React version 16 to generate a fallback UI in case a component were to crash. This was to ensure that a JavaScript error in a single component should not crash the whole app.<br>
 Consider the following React application which renders the component <code>DisplayName</code> displaying the name according to the input data.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">DisplayName</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./DisplayName&#34;</span>;
 
@@ -143,9 +171,42 @@ Consider the following React application which renders the component <code>Displ
 <h2 id="what-about-event-handlers">What about Event Handlers?</h2>
 <p>Error boundaries do not catch errors inside event handlers as React doesn’t need error boundaries to recover from errors in event handlers. Unlike the render method and lifecycle methods, the event handlers don’t happen during rendering. So if they throw, React still knows what to display on the screen.<br>
 If you need to catch an error inside an event handler, use the regular JavaScript <code>try</code> / <code>catch</code> statement.</p>
-</article>
-</main><footer id="footer">
+
+  </div>
+
+  <footer class="post-footer">
     
-</footer>
+
+    
+
+    
+    
+  </footer>
+  
+  <div class="comments">
+  <div class="comments">
+
+
+
+</div>
+  </div>
+</article>
+
+  <div class="foot">
+  
+  
+  
+  Powered by <a href="https://gohugo.io/">Hugo</a> 
+  &#183;
+  <a href="#"><i class="fas fa-chevron-up"></i></a>
+</div>
 </body>
+  <script src="/js/lazyload.min.js"></script>
+<script>
+  var lazyImage = new LazyLoad({container: document.getElementById('article')});
+</script>
+
+
+
+
 </html>
